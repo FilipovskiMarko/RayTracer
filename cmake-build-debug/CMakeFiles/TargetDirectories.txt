@@ -1,0 +1,3 @@
+C:/Users/ageor/CLionProjects/RT_in_a_weekend/cmake-build-debug/CMakeFiles/RT_in_a_weekend.dir
+C:/Users/ageor/CLionProjects/RT_in_a_weekend/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ageor/CLionProjects/RT_in_a_weekend/cmake-build-debug/CMakeFiles/rebuild_cache.dir
