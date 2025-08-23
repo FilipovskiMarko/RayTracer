@@ -13,7 +13,6 @@ int main() {
     auto material_ground = make_shared<lambertian>(color(0.65,0.65,0.0));
     world.add(make_shared<sphere>(point3(0,-1000,-1),1000,material_ground)); //Ground
 
-
     //Random spheres
 
     for (int i = -11; i < 11; i++) {
