@@ -5,9 +5,9 @@ There is a camera class that supports defocus blur(depth of field), adjusting VF
 
 Currently it writes the image data into "image.ppm" file.
 
-If you want to tinker around with the main and create your own ray traced images, you need to create your own hittable list object and add whatever you like to it, in the main file the list is titled world,
-using world.add(make_shared\<sphere>\()); you can add your own spheres to the world. A sphere is created like this: make_shared\<sphere>\(point3(X,Y,Z) //center coordinates, radius, material).
-A material is created like this: make_shared<material type>(color(R,G,B), //if metal you need to add a fuzz value after color, if dielectric you only need to input a refraction index);
+If you want to tinker around with the main and create your own ray traced images, you need to create your own hittable list object and add whatever you like to it, in the main file the list is titled world, using world.add(make_shared\<sphere>\()); you can add your own spheres to the world. 
+A sphere is created like this: make_shared\<sphere>\(point3(X,Y,Z) //center coordinates, radius, material). 
+A material is created like this: make_shared\<material type>\(color(R,G,B), //if metal you need to add a fuzz value after color, if dielectric you only need to input a refraction index);
 
 With this you can add your own objects to the world, to generate the image you need to create a camera object and render the image. I reccomend using 16.0/9.0 aspect ratio, a lower resolution (<400 image width), 10 samples per pixel (default), and 10 max depth, so that your image is generated in a few seconds and not in 24 hours like the one below XD;
 
