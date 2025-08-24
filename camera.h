@@ -25,7 +25,7 @@ public:
     void render(const hittable &world) {
         initialize();
 
-        std::ofstream image_file("image2.ppm");
+        std::ofstream image_file("image.ppm");
         image_file<<"P3\n"<<image_width<<" "<<image_height<<"\n255\n";
 
         for(int j=0;j<image_height;j++) {

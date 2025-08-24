@@ -23,7 +23,7 @@ class sphere : public hittable {
       bool hit(const ray& r, interval ray_t, hit_record& rec) const override {
         vec3 oc = center - r.origin();
         double a = r.direction().length_squared();
-        double h = dot(r.direction(), oc);
+        double h = dot(r.direction(), oc); // h = b/-2
         double c = oc.length_squared() - radius * radius;
 
         double discriminant = h*h - a*c;
