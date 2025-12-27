@@ -11,7 +11,7 @@ A sphere is created like this: make_shared\<sphere>\(point3(X,Y,Z) //center coor
 
 A material is created like this: make_shared\<material type>\(color(R,G,B), //if metal you need to add a fuzz value after color//, //if dielectric you only need to input a refraction index//);
 
-With this you can add your own objects to the world, to generate the image you need to create a camera object and render the image. I reccomend using 16.0/9.0 aspect ratio, a lower resolution (<400 image width), 10 samples per pixel (default), and 10 max depth, so that your image is generated in a few seconds and not in 24 hours like the one below XD;
+With this you can add your own objects to the world, to generate the image you need to create a camera object and render the image. I reccomend using 16.0/9.0 aspect ratio, a lower resolution (<400 image width), 10 samples per pixel (default), and 10 max depth.
 
 
 
