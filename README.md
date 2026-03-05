@@ -1,4 +1,4 @@
-This is a Ray Tracer built following the book Ray Tracing in one Weekend by Peter Shirley, Trevor David Black, Steve Hollasch. It helped me learn the fundamentals of ray tracing.
+This is a Ray Tracer built following the book: Ray Tracing in one Weekend by Peter Shirley, Trevor David Black, Steve Hollasch. It helped me learn the fundamentals of ray tracing.
 
 This ray tracer has 3 materials: lambertian(just scatters light), metal(reflects) and dielectric(refracts). It has a hittable list class where all the simulated objects are stored, currently it only supports adding spheres.
 The camera class contains options for defocus blur(depth of field), adjusting VFOV, resolution, camera positioning, samples per pixel(how many rays are sent out for each pixels color), max depth (maximum times a ray can bounce off a surface) and aspect ratio;
