@@ -6,19 +6,19 @@ The camera class contains options for defocus blur(depth of field), adjusting VF
 The result image is written into an "image.ppm" file.
 
 For creating objects in the world, a hittable list object is created and objects are added to it, in the main file the list is titled world, adding is done using:
-```bash
-world.add(make_shared\<sphere>\(...));
+```
+world.add(make_shared<sphere>(...));
 ```
 
 A sphere is created like this: 
 
-```bash
-make_shared\<sphere>\(point3(X,Y,Z) //center coordinates//, radius, material).
+```
+make_shared<sphere>(point3(X,Y,Z) center, radius, material).
 ```
 
 A material is created like this: 
-```bash
-make_shared\<material type>\(color(R,G,B), //if metal you need to add a fuzz value after color//, //if dielectric you only need to input a refraction index//);
+```
+make_shared<material type>(color(R,G,B), //if metal you need to add a fuzz value after color//, //if dielectric you only need to input a refraction index//);
 ```
 
 To generate the image a camera object is created and it renders the image. This code is executed using CPU only, so I recommend using a lower resolution (<400 image width), 10 samples per pixel (default), and 10 max depth.
